@@ -30,7 +30,7 @@
 }
 
 .contato-endereco{
-	background:url("../../img/icones/local.svg") no-repeat 0px 2px; /* Adiciona ícone de localização */
+	background: url(../../img/icones/local.svg) no-repeat 0px 2px; /* Adiciona ícone de localização */
 	padding-left: 28px; /* Adiciona espaço para o ícone */
 }
 
@@ -72,6 +72,7 @@
 @media (max-width: 600px){
 	.contato{
 		grid-template-columns: 1fr; /* Ajusta para uma única coluna */
+		
 	}
 	
 	.contato-dados,
@@ -105,7 +106,6 @@
 	
 	.contato-dados{
 		border-radius: 5px 5px 0 0; /* Mantém o arredondamento na parte superior */
-		margin-bottom: 5px; /* Pequeno ajuste de margem inferior */
 	}
 	
 	.contato-formulario{
