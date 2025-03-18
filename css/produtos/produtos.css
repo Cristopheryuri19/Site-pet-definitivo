@@ -1,14 +1,12 @@
 #produtos{
     display: flex;
     justify-content: center;
-    margin: 0;
 }
 
 .sub-produtos{
     display: flex;
     justify-content: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    padding: 40px;
 }
 
 
@@ -17,6 +15,8 @@
     text-align: center;
     gap: 50px;
 }
+
+
 
 @media (max-width: 400px){
     #produtos{

@@ -1,33 +1,69 @@
 @charset "utf-8";
-/* CSS Document */
+/* Define a codificação do documento como UTF-8 */
 
 .parceiros {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 40px; /* Espaçamento superior da seção */
+  padding-bottom: 40px; /* Espaçamento inferior da seção */
 }
 
 .sub-parceiros{
-	display: flex;
-	justify-content:center;
-	margin-top: 80px;
-	
+	display: flex; /* Usa flexbox para organizar os elementos */
+	justify-content: center; /* Centraliza os itens horizontalmente */
+	margin-top: 80px; /* Espaçamento superior */
 }
 
 .parceiros ul {
-  padding: 0 20px;
-  max-width: 1160px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin: 0 auto;
+  padding: 0 20px; /* Espaçamento interno horizontal */
+  max-width: 1160px; /* Largura máxima do container */
+  display: grid; /* Usa grid layout */
+  grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas de tamanho igual */
+  margin: 0 auto; /* Centraliza horizontalmente */
 }
 
-/*para alinhar as imagens*/
+/* Para alinhar as imagens dentro dos itens da lista */
 .parceiros li{
-	display: flex;
-	padding: 32px;
-	border:2px solid #D3D3D3;
+	display: flex; /* Usa flexbox para alinhar os itens */
+	padding: 32px; /* Espaçamento interno */
+	border: 2px solid #D3D3D3; /* Borda cinza */
 }
 
 .parceiros img{
-	margin: auto;
+	margin: auto; /* Centraliza as imagens dentro dos itens */
 }
+
+/* Estilos para telas menores que 800px */
+@media (max-width: 800px) {
+  .parceiros {
+    padding-bottom: 60px; /* Ajusta o espaçamento inferior */
+  }
+  
+  .parceiros ul {
+    grid-template-columns: repeat(2, 1fr); /* Reduz para 2 colunas */
+  }
+  
+  .parceiros li{
+	display: flex;
+	padding: 20px; /* Reduz o padding para telas menores */
+	border: 1px solid #D3D3D3; /* Reduz a espessura da borda */
+  }
+}
+
+/* Estilos para telas menores que 414px */
+@media (max-width: 400px) {
+  .sub-parceiros{
+    margin-top: 60px; /* Reduz o espaçamento superior */
+    font-size: 21px; /* Ajusta o tamanho da fonte */
+  }
+  
+  .parceiros {
+    padding-top: 20px; /* Reduz o espaçamento superior */
+    padding-bottom: 10px; /* Reduz o espaçamento inferior */
+  }
+  
+  .parceiros img{
+    margin: auto; /* Centraliza as imagens */
+    width: 80%; /* Reduz a largura das imagens para 80% */
+    height: 80%; /* Reduz a altura das imagens para 80% */
+  }
+}
+

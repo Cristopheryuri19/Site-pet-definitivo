@@ -1,0 +1,118 @@
+.contato{
+	width: 1160px; /* Define a largura máxima da seção de contato */
+	display: grid; /* Usa CSS Grid para organizar o layout */
+	grid-template-columns: 1fr 1fr; /* Cria duas colunas de tamanho igual */
+	/*5fr 7fr;*/ /* Comentado: alternativa para tamanhos desproporcionais */
+	/*background-color: #329C3E;*/ /* Comentado: cor de fundo alternativa */
+}
+
+.contato-formulario{
+	/*padding: 60px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	margin-bottom: 50px;*/ /* Comentado: alternativas para padding e sombra */
+	background: #2D37E8; /* Cor de fundo inicial (será sobrescrita abaixo) */
+}
+
+.contato-dados{
+	background:#E8F8F8; /* Define o fundo da seção de dados de contato */
+	border-radius: 5px 0 0 5px; /* Arredonda as bordas esquerdas */
+	padding: 60px; /* Define espaçamento interno */
+}
+
+.contato-formulario{
+	background:#F7F1DF; /* Define a cor de fundo do formulário */
+	border-radius: 0 5px 5px 0; /* Arredonda as bordas direitas */
+	padding: 60px; /* Define espaçamento interno */
+}
+
+.contato-dados h2{
+	margin-bottom: 40px; /* Adiciona espaçamento abaixo do título */
+}
+
+.contato-endereco{
+	background:url("../../img/icones/local.svg") no-repeat 0px 2px; /* Adiciona ícone de localização */
+	padding-left: 28px; /* Adiciona espaço para o ícone */
+}
+
+.contato-endereco{
+	margin-bottom: 8px; /* Adiciona espaçamento abaixo do endereço */
+}
+
+.contato-meios a{
+	display: block; /* Cada link ocupa uma linha inteira */
+	max-width: max-content; /* Ajusta a largura ao conteúdo */
+	/* Comentado: Alternativa para definir fundo visível */
+	margin-bottom: 8px; /* Adiciona espaçamento entre os itens */
+	padding-left: 28px; /* Espaço para possíveis ícones */
+}
+
+.contato-meios a:hover{
+	color:#8C8081; /* Muda a cor ao passar o mouse */
+}
+
+.email{
+	background: url(../../img/icones/email.svg) no-repeat; /* Ícone de email */
+	padding-left: 28px; /* Espaço para o ícone */
+	margin-top: 32px; /* Espaçamento superior */
+}
+
+.fone{
+	background:url(../../img/icones/telefone.svg) no-repeat; /* Ícone de telefone */
+	padding-left: 28px; /* Espaço para o ícone */
+	margin-top: 32px; /* Espaçamento superior */
+}
+
+.contato-redes{
+	display: flex; /* Usa flexbox para organizar os ícones de redes sociais */
+	gap: 32px; /* Adiciona espaçamento entre os itens */
+	padding-left: 28px; /* Espaço para alinhamento */
+	margin-top: 40px; /* Espaçamento superior */
+}
+
+@media (max-width: 600px){
+	.contato{
+		grid-template-columns: 1fr; /* Ajusta para uma única coluna */
+	}
+	
+	.contato-dados,
+	.contato-formulario{
+		padding: 20px; /* Reduz o espaçamento interno */
+	}
+	
+	.contato-dados{
+		border-radius: 5px 5px 0 0; /* Arredonda apenas a parte superior */
+		margin-bottom: 0px;
+	}
+	
+	.contato-formulario{
+		border-radius: 0 0 5px 5px; /* Arredonda apenas a parte inferior */
+	}
+	
+	.contato-dados h2{
+		margin-bottom: 32px; /* Reduz o espaçamento inferior do título */
+	}
+}
+
+@media (max-width: 400px){
+	.contato{
+		grid-template-columns: 1fr; /* Mantém uma única coluna */
+	}
+	
+	.contato-dados,
+	.contato-formulario{
+		padding: 50px; /* Ajusta o espaçamento interno */
+	}
+	
+	.contato-dados{
+		border-radius: 5px 5px 0 0; /* Mantém o arredondamento na parte superior */
+		margin-bottom: 5px; /* Pequeno ajuste de margem inferior */
+	}
+	
+	.contato-formulario{
+		border-radius: 0 0 5px 5px; /* Mantém o arredondamento na parte inferior */
+	}
+	
+	.contato-dados h2{
+		margin-bottom: 32px; /* Mantém espaçamento inferior do título */
+	}
+}

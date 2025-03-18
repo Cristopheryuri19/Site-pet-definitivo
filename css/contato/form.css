@@ -1,0 +1,75 @@
+/* Definindo a estrutura do formulário, utilizando o grid */
+.form {
+    display: grid; /* Ativa o grid layout */
+    grid-template-columns: 1fr; /* Define uma única coluna (1fr é uma unidade de espaço flexível) */
+  }
+  
+  /* Estilos para os labels dentro do formulário */
+  .form label {
+    /* Para garantir que os labels fiquem um embaixo do outro */
+    display: block; /* Faz com que o label ocupe toda a linha */
+    font: 500 14px "Poppins", Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif"; 
+    margin-bottom: 4px; /* Espaço entre o label e o campo de entrada */
+  }
+  
+  /* Estilos para os campos de entrada do tipo text, email e textarea */
+  .form input[type="text"],
+  .form input[type="email"],
+  .form textarea {
+    font: 400 14px "Poppins", Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif"; /* Define a fonte dos inputs */
+    background: #EFEDED; /* Cor de fundo do campo */
+    border: 1px solid #B59B0E; /* Cor e espessura da borda */
+    padding: 12px; /* Espaçamento interno dos campos */
+    border-radius: 4px; /* Bordas arredondadas */
+    width: 100%; /* Faz o campo ocupar toda a largura disponível */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo de largura */
+  }
+  
+  /* Mudando o estilo quando os campos estão em foco */
+  .form input[type="text"]:focus,
+  .form input[type="email"]:focus,
+  .form textarea:focus {
+    outline: none; /* Remove o contorno padrão ao focar no campo */
+    border-color: #847803; /* Altera a cor da borda ao focar */
+    background: #ffffff; /* Altera o fundo para branco quando em foco */
+    box-shadow: 0 0 0 1px #cccccc; /* Adiciona uma sombra ao redor do campo quando em foco */
+  }
+  
+  /* Estilo para expandir a caixa (coluna 2) de ponta a ponta */
+  .form .col-2 {
+    grid-column: span 2; /* Faz o elemento ocupar 2 colunas no grid */
+  }
+  
+  /* Estilo do botão dentro do formulário */
+  .botao {
+    font: 400 14px "Poppins", Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif"; /* Define a fonte do botão */
+    background: #EFEDED; /* Cor de fundo do botão */
+    border: 1px solid #B59B0E; /* Cor e espessura da borda do botão */
+    padding: 12px; /* Espaçamento interno do botão */
+    border-radius: 4px; /* Bordas arredondadas do botão */
+  }
+  
+  /* Estilo do botão ao passar o mouse sobre ele */
+  .botao:hover {
+    background: #F0AB3A; /* Cor de fundo quando o mouse passa por cima */
+    color: #ffffff; /* Altera a cor do texto quando o mouse passa por cima */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  }
+  
+  /* Impede que o textarea seja redimensionado */
+  textarea {
+    resize: none; /* Desabilita o redimensionamento do campo de texto */
+  }
+  
+  /* Estilos responsivos para telas menores (max-width: 400px) */
+  @media (max-width: 400px) {
+    .form {
+      grid-template-columns: 1fr; /* Em telas menores, o formulário terá uma única coluna */
+    }
+  
+    /* Ajuste da coluna que ocupa 2 espaços no grid */
+    .form .col-2 {
+      grid-column: 1; /* Faz com que a coluna 2 ocupe apenas uma coluna */
+    }
+  }
+  
