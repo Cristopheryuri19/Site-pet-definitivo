@@ -1,45 +1,42 @@
 .footer-bg{
-    background-color: #f0ebba;
-    display: flex;
-    justify-content: center;
-    height: 350px;
+    background-color: #f0ebba; /* Cor de fundo do rodapé */
+    display: flex; /* Usa flexbox para organizar os itens */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    height: 350px; /* Define a altura do rodapé */
 }
 
 .container-footer{
-    display: flex;
-    justify-content: space-between;
-    gap: 160px;
-    flex-wrap: wrap;
+    display: flex; /* Usa flexbox para o layout do rodapé */
+    justify-content: space-between; /* Distribui os itens com espaçamento igual entre eles */
+    gap: 160px; /* Espaçamento entre os itens */
+    flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas, se necessário */
 }
 
 .footer-logo, .footer-menu, .footer-redes{
-    padding: 40px;
+    padding: 40px; /* Espaçamento interno de 40px em cada seção do rodapé */
 }
 
 .footer-redes a{
-    display: inline-block;
-    margin-top: 15px;
-    margin-right: 25px;
-    
+    display: inline-block; /* Cada link ocupa o tamanho do seu conteúdo */
+    margin-top: 15px; /* Espaçamento acima de cada link */
+    margin-right: 25px; /* Espaçamento à direita de cada link */
 }
 
 @media (max-width: 400px){
     .footer-bg{
-        height: 800px
+        height: 800px; /* Aumenta a altura do rodapé em telas menores que 400px */
     }
 
     .container-footer{
-        gap: 0px;
+        gap: 0px; /* Remove o espaçamento entre os itens */
     }
 
     .footer-redes a{
-        margin-top: 15px;
-        padding: 5px;
+        margin-top: 15px; /* Mantém o espaçamento superior */
+        padding: 5px; /* Adiciona um pequeno padding nos links */
     }
 
     .footer-logo, .footer-menu, .footer-redes{
-        padding: 15px;
+        padding: 15px; /* Reduz o padding para 15px em telas menores */
     }
 }
-
-    

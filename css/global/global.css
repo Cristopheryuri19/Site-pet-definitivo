@@ -1,51 +1,50 @@
 @charset "utf-8";
-/* CSS Document */
+/* Define a codificação do documento como UTF-8, garantindo suporte a caracteres especiais */
 
+/* Definindo o comportamento de rolagem suave para o documento */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /* Permite rolar suavemente para as âncoras */
 }
-/*body tem margin por padrão*/
+
+/* O body tem margin por padrão, e a remoção disso ajuda a controlar melhor o layout */
 body{
-	margin: 0px;
+	margin: 0px; /* Remove a margem padrão do body */
 }
 
+/* Container principal que usa flexbox para disposição dos elementos */
 .container{
-	width: 1160px;
-	/*background-color: #E94B4E;*/
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	width: 1160px; /* Largura fixa do container */
+	display: flex; /* Usa flexbox para organizar os itens */
+	justify-content: space-between; /* Distribui os itens com espaçamento entre eles */
+	align-items: center; /* Alinha os itens verticalmente ao centro */
 }
 
+/* Container de formulário, centralizando seu conteúdo */
 .container-form{
-	width: 100%;
-	/*background: #4F92E3;*/
-	display: flex;
-	justify-content: center;
+	width: 100%; /* O container ocupa toda a largura disponível */
+	display: flex; /* Usa flexbox */
+	justify-content: center; /* Centraliza os itens horizontalmente */
 }
 
-
+/* Links sem sublinhado e com cor herdada do elemento pai */
 a{
-	text-decoration: none;
-	color:inherit;
+	text-decoration: none; /* Remove o sublinhado dos links */
+	color: inherit; /* Herda a cor do elemento pai */
 }
 
-/*ul por padrão tem margin e padding*/
+/* Definindo os estilos para as listas, removendo margens e preenchimentos */
 ul{
-	margin: 0px;
-	padding: 0px;
-	list-style: none;
+	margin: 0px; /* Remove a margem padrão das listas */
+	padding: 0px; /* Remove o padding padrão das listas */
+	list-style: none; /* Remove os marcadores das listas */
 }
 
-
-/*O h1 possui uma margem por padrão para cima e baixo, quando não tenho um elemento antes a margem vaza, vaza o container */
+/* O h1 possui uma margem por padrão para cima e para baixo, e ao remover essa margem, evitamos problemas com o layout */
 h1{
-	margin: 0px;
-	padding: 40px;
-	
+	margin: 0px; /* Remove a margem superior e inferior */
+	padding: 40px; /* Adiciona padding interno ao redor do h1 */
 }
 
 h2{
-	margin: 0px;
+	margin: 0px; /* Remove a margem superior e inferior do h2 */
 }
-

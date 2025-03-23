@@ -1,143 +1,136 @@
-@charset "utf-8";
-/* CSS Document */
-
+/* Estilos para a seção Quem Somos */
 #quemsomos{
-	/* Para centralizar o que que estiver dentro do quem somos*/
+	/* Centraliza o conteúdo dentro da seção */
 	display: flex;
-	justify-content: center;
-	margin: 20px;
-	
+	justify-content: center; /* Centraliza os itens horizontalmente */
+	margin: 20px; /* Adiciona um espaçamento de 20px ao redor */
 }
 
+/* Opções dentro da seção Quem Somos */
 .quemsomos_options{
-	
-	height: 320px;
-	/*display:flex;
-	flex-wrap: wrap;*/
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	height: 320px; /* Define a altura da grid */
+	display: grid; /* Usa grid layout para organizar os itens */
+	grid-template-columns: 1fr 1fr; /* Cria duas colunas de tamanho igual */
 }
 
-
+/* Estilos para as opções dentro da seção */
 .op1,
-.op2{		
-	padding: 40px;
-}
-
-.op1{
-	background-color:#E6AE66;
-	border-radius: 4px 0px 0px 4px;
-	
-}
-
 .op2{
-	background-color:#E8A085;
-	border-radius: 0px 4px 4px 0px;
+	padding: 40px; /* Adiciona um espaçamento interno de 40px */
 }
 
+/* Estilo para a primeira opção */
+.op1{
+	background-color:#E6AE66; /* Cor de fundo da opção */
+	border-radius: 4px 0px 0px 4px; /* Bordas arredondadas no lado esquerdo */
+}
 
+/* Estilo para a segunda opção */
+.op2{
+	background-color:#E8A085; /* Cor de fundo da opção */
+	border-radius: 0px 4px 4px 0px; /* Bordas arredondadas no lado direito */
+}
+
+/* Estilo para o título das opções */
 .op_title{
-	/*background: #00ADF5;*/
-	padding: 20px 20px 10px 20px;
+	padding: 20px 20px 10px 20px; /* Espaçamento interno no título */
 }
 
+/* Estilo para a descrição das opções */
 .op_desc{
-	/*background: #107C59;*/
-	padding: 10px 20px 20px 20px;
-	line-height: 28px;
+	padding: 10px 20px 20px 20px; /* Espaçamento interno na descrição */
+	line-height: 28px; /* Define o espaçamento entre linhas do texto */
 }
 
-
+/* Estilo para os links dentro das opções */
 .quemsomos_options a{
-	border: 2px solid #FFFFFF;
-	padding: 10px;
-	border-radius: 4px;
-	color: white;
-	text-decoration: none;
-	margin: 20px;
+	border: 2px solid #FFFFFF; /* Borda branca ao redor do link */
+	padding: 10px; /* Espaçamento interno do link */
+	border-radius: 4px; /* Bordas arredondadas no link */
+	color: white; /* Cor do texto do link */
+	text-decoration: none; /* Remove o sublinhado do link */
+	margin: 20px; /* Adiciona margem ao redor do link */
 }
 
+/* Estilos para telas menores que 768px */
 @media (max-width:768px){
 	.quemsomos_options{
-	/*background-color: green;*/
-	display: grid;
-	grid-template-columns: 1fr;
-	margin-bottom: 170px;
-}
+		display: grid; /* Exibe os itens em grid */
+		grid-template-columns: 1fr; /* Reduz para uma única coluna */
+		margin-bottom: 170px; /* Adiciona margem inferior */
+	}
 
-.op1{
-	background-color:#E6AE66;
-	border-radius: 4px 4px 0px 0px;
+	/* Ajusta a borda para a primeira opção */
+	.op1{
+		background-color:#E6AE66;
+		border-radius: 4px 4px 0px 0px; /* Bordas arredondadas na parte superior */
+	}
 	
+	/* Ajusta a borda para a segunda opção */
+	.op2{
+		background-color:#E8A085;
+		border-radius: 0px 0px 4px 4px; /* Bordas arredondadas na parte inferior */
+	}
 }
 
-.op2{
-	background-color:#E8A085;
-	border-radius: 0px 0px 4px 4px;
-}
-
-}
-
+/* Estilos para telas menores que 414px */
 @media (max-width:414px){
 	.quemsomos_options{
-	/*background-color: green;*/
-	display: grid;
-	grid-template-columns: 1fr;
-	font-size: 14px;
-	margin-bottom: 260px;
+		display: grid; /* Exibe os itens em grid */
+		grid-template-columns: 1fr; /* Reduz para uma única coluna */
+		font-size: 14px; /* Diminui o tamanho da fonte */
+		margin-bottom: 260px; /* Aumenta a margem inferior */
+	}
 }
 
-}
+/* Estilos para telas menores que 400px */
 @media (max-width:400px){
 	.quemsomos_options{
-	/*background-color: green;*/
-	display: grid;
-	grid-template-columns: 1fr;
-	font-size: 14px;
-	margin-bottom: 260px;
+		display: grid;
+		grid-template-columns: 1fr;
+		font-size: 14px;
+		margin-bottom: 260px;
+	}
 }
 
-}
-
+/* Estilos para telas menores que 390px */
 @media (max-width:390px){
 	.quemsomos_options{
-	/*background-color: green;*/
-	display: grid;
-	grid-template-columns: 1fr;
-	font-size: 14px;
-	margin-bottom: 280px;
+		display: grid;
+		grid-template-columns: 1fr;
+		font-size: 14px;
+		margin-bottom: 280px; /* Aumenta a margem inferior */
+	}
 }
 
-}
+/* Estilos para telas menores que 376px */
 @media (max-width:376px){
 	.quemsomos_options{
-	/*background-color: green;*/
-	display: grid;
-	grid-template-columns: 1fr;
-	font-size: 14px;
-	margin-bottom: 290px;
-}
+		display: grid;
+		grid-template-columns: 1fr;
+		font-size: 14px;
+		margin-bottom: 290px; /* Aumenta a margem inferior */
+	}
 }
 
+/* Estilos para telas menores que 320px */
 @media (max-width:320px){
 	.quemsomos_options{
-	/*background-color: green;*/
-	display: grid;
-	grid-template-columns: 1fr;
-	font-size: 14px;
-	margin-bottom: 290px;
-}
+		display: grid;
+		grid-template-columns: 1fr;
+		font-size: 14px;
+		margin-bottom: 290px; /* Aumenta a margem inferior */
+	}
 	
+	/* Ajusta o título para telas menores */
 	.op_title{
-	/*background: #00ADF5;*/
-	padding: 5px 10px 5px 10px;
-	font-size: 16px;
-}
+		padding: 5px 10px 5px 10px; /* Diminui o padding */
+		font-size: 16px; /* Diminui o tamanho da fonte */
+	}
 
-.op_desc{
-	/*background: #107C59;*/
-	padding: 5px 10px 20px 10px;
-	line-height: 28px;
-}
-
+	/* Ajusta a descrição para telas menores */
+	.op_desc{
+		padding: 5px 10px 20px 10px; /* Diminui o padding */
+		line-height: 28px; /* Mantém o espaçamento entre linhas */
+	}
 }

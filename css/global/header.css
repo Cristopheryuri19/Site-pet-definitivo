@@ -1,90 +1,71 @@
 @charset "utf-8";
-/* CSS Document */
+/* Define a codificação do documento como UTF-8, garantindo suporte a caracteres especiais */
 
-
+/* Estilos para o cabeçalho */
 .header{
-	/*Para o menu ficar ao lado do logo:*/
-	display: flex;
-	justify-content: space-between;
-	/*Para alinhar o menu ao centro com o logo*/
-	align-items: center;
-	/* padding 40px para cima e baixo e 20px para um lado e outro*/
-	padding: 40px 20px;
-	/*ao invés de deixar o tamanho crescer infinitamente em monitores maiores, definir um width máximo*/
-	max-width: 1160px;
-	/*alinhar ao centro com item de bloco que tem alinhamento é o margem auto left e right e para cima e para baixo de 0, com isso alinha o logo e o menu, conteúdos que estão dentro do header, então usar sempre max-width para crescer até o tamanho que eu quero e margin auto*/
-	margin: 0 auto;
-	
-	
+	/* Exibe o header como um flex container, distribuindo os itens de maneira flexível */
+	display: flex; 
+	justify-content: space-between; /* Distribui os itens com espaçamento entre eles */
+	align-items: center; /* Alinha verticalmente os itens ao centro */
+	padding: 40px 20px; /* Adiciona padding de 40px em cima e embaixo e 20px nos lados */
+	max-width: 1160px; /* Define uma largura máxima para o header, evitando que ele fique muito largo em telas grandes */
+	margin: 0 auto; /* Centraliza o header horizontalmente, com margem automática à esquerda e direita */
 }
 
-
+/* Estilos para o menu dentro do header */
 .header-menu{
-	display: flex;
-	gap: 40px;
-	flex-wrap: wrap;
-	justify-content: center; /*Para o responsivo*/
+	display: flex; /* Exibe o menu como um flex container */
+	gap: 40px; /* Adiciona 40px de espaçamento entre os itens do menu */
+	flex-wrap: wrap; /* Permite que os itens do menu quebrem para a linha seguinte em telas menores */
+	justify-content: center; /* Centraliza os itens do menu */
 }
 
+/* Estilo para o efeito hover nos links do menu */
 .header-menu a:hover{
-	text-decoration:underline;
-	text-decoration-color:#A88213;
-	text-decoration-style: double;
+	text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+	text-decoration-color: #A88213; /* Define a cor do sublinhado */
+	text-decoration-style: double; /* Define o estilo do sublinhado como duplo */
 }
 
-
-
-
-
-@media (max-width:690px){
-		
+/* Estilos para telas menores que 690px */
+@media (max-width: 690px){
 	.header {
-      display: flex;
-	  flex-direction: column;
-	  gap: 40px;
-	  /*padding: 20px;*/
+      display: flex; 
+	  flex-direction: column; /* Organiza os itens do header em uma coluna */
+	  gap: 40px; /* Adiciona 40px de espaçamento entre os itens */
   }
 
 	.header a{
-		background:#F9EAEA;
-		border-radius: 6px;
-		padding: 10px 20px 10px 20px;
-		
+		background: #F9EAEA; /* Define o fundo do link com uma cor suave */
+		border-radius: 6px; /* Arredonda os cantos do link */
+		padding: 10px 20px 10px 20px; /* Adiciona padding ao redor do link */
 	}
 	
 	.fd-logo a{
-		background:#ffffff;
-		
+		background: #ffffff; /* Define o fundo do link da logo como branco */
 	}
-	
 }
 
-@media (max-width:360px){
-
-		
+/* Estilos para telas menores que 360px */
+@media (max-width: 360px){
 	.header {
-      display: flex;
-	  flex-direction: column;
-	  gap: 20px;
-	
-  }
+      display: flex; 
+	  flex-direction: column; /* Organiza os itens do header em uma coluna */
+	  gap: 20px; /* Reduz o espaçamento entre os itens para 20px */
+	}
 	
 	.header-menu{
-		gap:20px;
+		gap: 20px; /* Reduz o espaçamento entre os itens do menu */
 	}
 
 	.header a{
-		background:#F9EAEA;
-		border-radius: 6px;
-		font-size: 16px;
-		padding: 5px 10px 5px 10px;
-		
+		background: #F9EAEA; /* Define o fundo do link como uma cor suave */
+		border-radius: 6px; /* Arredonda os cantos do link */
+		font-size: 16px; /* Reduz o tamanho da fonte */
+		padding: 5px 10px 5px 10px; /* Ajusta o padding do link */
 	}
 	
 	.fd-logo a{
-		background:#ffffff;
-		
+		background: #ffffff; /* Define o fundo do link da logo como branco */
 	}
-	
 }
-

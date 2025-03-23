@@ -1,40 +1,41 @@
+/* Estilos para a seção de produtos */
 #produtos{
-    display: flex;
-    justify-content: center;
+    display: flex; /* Usa flexbox para exibir os itens de forma flexível */
+    justify-content: center; /* Centraliza os itens dentro do container */
 }
 
+/* Estilos para a sub-seção de produtos */
 .sub-produtos{
-    display: flex;
-    justify-content: center;
-    padding: 40px;
+    display: flex; /* Usa flexbox para organizar os itens dentro da sub-seção */
+    justify-content: center; /* Centraliza os itens */
+    padding: 40px; /* Adiciona espaçamento interno de 40px */
 }
 
-
+/* Estilos para os ícones dos produtos */
 .produtos-icons{
-    display: flex;
-    text-align: center;
-    gap: 50px;
+    display: flex; /* Exibe os ícones de produtos em linha */
+    text-align: center; /* Alinha o texto dos ícones no centro */
+    gap: 50px; /* Define um espaço de 50px entre os ícones */
 }
 
-
-
+/* Estilos para telas menores que 400px */
 @media (max-width: 400px){
     #produtos{
-        display: flex;
-        overflow-x: auto;
-        justify-content: center;
+        display: flex; /* Mantém o display flex em telas pequenas */
+        overflow-x: auto; /* Permite rolagem horizontal quando necessário */
+        justify-content: center; /* Centraliza os itens */
     }
 
     #produtos::-webkit-scrollbar{
-        display: none;
+        display: none; /* Esconde a barra de rolagem */
     }
 
     .produtos-icons{
-        gap: 30px;
-        margin-left: 400px;
+        gap: 30px; /* Reduz o espaço entre os ícones para 30px */
+        margin-left: 400px; /* Adiciona uma margem à esquerda de 400px */
     }
 
     .sub-produtos{
-        margin-top: 50px;
+        margin-top: 50px; /* Adiciona um espaçamento superior de 50px */
     }
 }

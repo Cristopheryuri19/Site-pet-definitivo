@@ -1,43 +1,38 @@
 @charset "utf-8";
-/* CSS Document */
+/* Define a codificação do documento como UTF-8, garantindo suporte a caracteres especiais */
 
+/* Estilos para a seção de introdução */
 #introducao{
-	background-image:url("../../img/slider.jpg");
-	display: flex;
-	justify-content: center;
-	background-position: center;
-	/*Para monitores maiores a imagem vai expandir e para celulares diminuir!*/
-	background-size: cover;
-	/*Se não tiver nada escrito no html precisamos definir a altura para conseguir ver a imagem*/
-	height: 600px;
-	}
-
-
-.introducao-texto h1{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	
+	background-image: url("../../img/slider.jpg"); /* Define a imagem de fundo para o elemento */
+	display: flex; /* Usa flexbox para organizar os elementos */
+	justify-content: center; /* Centraliza os elementos dentro do container */
+	background-position: center; /* Centraliza a imagem de fundo */
+	background-size: cover; /* Faz a imagem de fundo cobrir todo o espaço disponível, adaptando para diferentes tamanhos de tela */
+	height: 600px; /* Define a altura da seção */
 }
 
+/* Estilos para o título na seção de introdução */
+.introducao-texto h1{
+	display: grid; /* Usa grid layout para organizar o título */
+	grid-template-columns: 1fr 1fr; /* Cria duas colunas iguais para o título */
+}
 
+/* Estilos para telas menores que 690px */
 @media (max-width:690px){
-		
 	#introducao{
-		height: 300px;
-		
+		height: 300px; /* Reduz a altura da seção de introdução em telas menores */
 	}
 	
 	.introducao-texto h1{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	font-size: 46px;
-}
-	
+		display: grid; /* Mantém o grid layout para o título */
+		grid-template-columns: 1fr 1fr; /* Continua com duas colunas para o título */
+		font-size: 46px; /* Reduz o tamanho da fonte do título para 46px */
+	}
 }
 
+/* Estilos para telas menores que 415px */
 @media (max-width:415px){
 	.introducao-texto h1{
-		font-size:41px;
-		}
+		font-size: 41px; /* Reduz ainda mais o tamanho da fonte do título para 41px em telas pequenas */
+	}
 }
-

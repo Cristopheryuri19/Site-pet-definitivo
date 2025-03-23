@@ -1,75 +1,63 @@
-@charset "utf-8";
-/* CSS Document */
-
+/* Estilos para a seção Vantagens */
 #vantagens{
-	/* Para centralizar o que que estiver dentro do quem somos*/
+	/* Centraliza o conteúdo dentro da seção */
 	display: flex;
-	justify-content: center;
-	margin-top: 2px;
-	background-color:#F8F0F1;
-	border-bottom:solid 2px #E5DCDC;
-	
+	justify-content: center; /* Centraliza os itens horizontalmente */
+	margin-top: 2px; /* Adiciona uma margem superior de 2px */
+	background-color:#F8F0F1; /* Define a cor de fundo da seção */
+	border-bottom:solid 2px #E5DCDC; /* Adiciona uma borda inferior de 2px */
 }
 
+/* Estilo para as opções dentro da seção Vantagens */
 .vantagens_options{
-	/*background-color: green;*/
-	height: 118px;
-	display:flex;
-	
+	height: 118px; /* Define a altura da div que contém as opções */
+	display: flex; /* Exibe os itens em linha */
 }
 
+/* Estilo para as três opções dentro de Vantagens */
 .va1,
 .va2,
 .va3{		
-	width: 386px;
-	
-	
+	width: 386px; /* Define a largura das opções */
 }
 
-
-
+/* Estilo para os ícones das opções */
 .va_icon{
-	/*background: #00ADF5;*/
 	display: flex;
-	justify-content: center;
-	padding: 30px 0px 3px 0px;
-	
+	justify-content: center; /* Centraliza o ícone */
+	padding: 30px 0px 3px 0px; /* Espaçamento interno (padding) no ícone */
 }
 
+/* Estilo para as descrições das opções */
 .va_desc{	
-	/*background: #107C59;*/
 	display: flex;
-	justify-content: center;
-	padding: 3px 0px 30px 0px;
+	justify-content: center; /* Centraliza a descrição */
+	padding: 3px 0px 30px 0px; /* Espaçamento interno (padding) na descrição */
 }
 
-
+/* Estilos para telas menores que 910px */
 @media (max-width:910px){
 	#vantagens{
 		display: flex;
-		overflow-x: auto;
-		justify-content: center;
-		
+		overflow-x: auto; /* Permite rolagem horizontal se o conteúdo exceder a largura da tela */
+		justify-content: center; /* Centraliza o conteúdo */
 	}
 	
 	.vantagens_options{
-	
-	margin-left: 390px;
-	
-	
+		margin-left: 390px; /* Adiciona uma margem à esquerda */
 	}
 	
+	/* Esconde a barra de rolagem no navegador */
 	#vantagens::-webkit-scrollbar {
-  display: none;
-}
+  		display: none;
+	}
 }
 
+/* Estilos para telas menores que 320px */
 @media (max-width:320px){
-.vantagens_options{
-	/*background-color: green;*/
-	height: 118px;
-	display:flex;
-	margin-left: 390px;
-	
+	.vantagens_options{
+		height: 118px; /* Define a altura da div que contém as opções */
+		display: flex; /* Exibe os itens em linha */
+		margin-left: 390px; /* Adiciona uma margem à esquerda */
 	}
 }

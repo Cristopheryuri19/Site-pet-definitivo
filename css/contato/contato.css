@@ -2,14 +2,10 @@
 	width: 1160px; /* Define a largura máxima da seção de contato */
 	display: grid; /* Usa CSS Grid para organizar o layout */
 	grid-template-columns: 1fr 1fr; /* Cria duas colunas de tamanho igual */
-	/*5fr 7fr;*/ /* Comentado: alternativa para tamanhos desproporcionais */
-	/*background-color: #329C3E;*/ /* Comentado: cor de fundo alternativa */
+	
 }
 
 .contato-formulario{
-	/*padding: 60px;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-	margin-bottom: 50px;*/ /* Comentado: alternativas para padding e sombra */
 	background: #2D37E8; /* Cor de fundo inicial (será sobrescrita abaixo) */
 }
 
@@ -41,7 +37,6 @@
 .contato-meios a{
 	display: block; /* Cada link ocupa uma linha inteira */
 	max-width: max-content; /* Ajusta a largura ao conteúdo */
-	/* Comentado: Alternativa para definir fundo visível */
 	margin-bottom: 8px; /* Adiciona espaçamento entre os itens */
 	padding-left: 28px; /* Espaço para possíveis ícones */
 }
